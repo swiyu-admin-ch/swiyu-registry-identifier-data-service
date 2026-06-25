@@ -1,0 +1,48 @@
+# SPDX-FileCopyrightText: 2025 Swiss Confederation
+#
+# SPDX-License-Identifier: MIT
+
+jeap:
+  health:
+    metric:
+      contributor-metrics:
+        enabled: true
+  monitor:
+    prometheus:
+      password: "{noop}${MONITORING_BASIC_AUTH_PASSWORD}"
+      user: "${MONITORING_BASIC_AUTH_USERNAME}"
+  swagger:
+    status: OPEN
+  rest:
+    tracing:
+      uri-filter-pattern: .*/actuator/.*
+      full-response-details-in-message: false
+
+spring:
+  application:
+    name: swiyu-registry-base-data-service
+  datasource:
+    hikari:
+      schema: ${spring.jpa.properties.hibernate.default_schema}
+  jpa:
+    properties:
+      hibernate:
+        default_schema: data
+        ddl-auto: validate
+    open-in-view: false
+
+springdoc:
+  swagger-ui:
+    oauth:
+      client-id: ${spring.application.name}
+    try-it-out-enabled: true
+
+logging:
+  level:
+    ch.admin.bit.jeap: INFO
+    ch.admin.bit.jeap.log.RestRequestTracer: DEBUG
+    ch.admin.bj.swiyu: INFO
+
+did-authoring:
+  httpRoute: "http://localhost:8190"
+  didRoute: "localhost%3A8190"

@@ -1,0 +1,21 @@
+# SPDX-FileCopyrightText: 2025 Swiss Confederation
+#
+# SPDX-License-Identifier: MIT
+
+#
+# The intent of the "shared" profile is to provide a convenient way to run other applications of SWIYU
+# so they are linked to each other and do not conflict with ports. E.g.
+# swiyu-registry-identifier-authoring-service
+#
+spring:
+  datasource: # the datasource from authoring service
+    url: "jdbc:postgresql://localhost:5180/identifier-registry-db"
+    username: "postgres"
+    password: "secret"
+  jpa:
+    properties:
+      hibernate:
+        ddl-auto: validate
+  docker:
+    compose:
+      enabled: false

@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="start:app" type="SpringBootApplicationConfigurationType"
+                   factoryName="Spring Boot">
+        <option name="ACTIVE_PROFILES" value="local"/>
+        <module name="swiyu-registry-identifier-data-service"/>
+        <option name="SPRING_BOOT_MAIN_CLASS" value="ch.admin.bj.swiyu.registry.identifier.data.Application"/>
+        <method v="2">
+            <option name="Make" enabled="true"/>
+        </method>
+    </configuration>
+</component>
