@@ -10,7 +10,7 @@
 
     <groupId>ch.admin.bj.swiyu</groupId>
     <artifactId>swiyu-registry-identifier-data-service</artifactId>
-    <version>1.2.6-SNAPSHOT</version>
+    <version>1.2.7-SNAPSHOT</version>
 
     <parent>
         <groupId>ch.admin.bit.jeap</groupId>
@@ -103,6 +103,16 @@
     <dependencyManagement>
         <dependencies>
             <!-- CVE-OVERRIDES Start -->
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-classic</artifactId>
+                <version>1.5.36</version>
+            </dependency>
+            <dependency>
+                <groupId>ch.qos.logback</groupId>
+                <artifactId>logback-core</artifactId>
+                <version>1.5.36</version>
+            </dependency>
             <!-- CVE-OVERRIDES End -->
         </dependencies>
     </dependencyManagement>
