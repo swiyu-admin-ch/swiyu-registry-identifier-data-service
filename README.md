@@ -59,6 +59,13 @@ its docker-compose config).
 
 ## Usage
 
+### Secrets config
+
+Due to the necessity of local secrets for development there might be profiles used in the run configurations
+which are not part of this repository. Those profiles are generated outside of this repository and provided
+to the application als `application-*.yaml` files in the root `/config` directory or directly via environment
+variables.
+
 ### Auth
 
 The data service is always unprotected as all data on the registers should be readable by everyone.  

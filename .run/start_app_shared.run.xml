@@ -1,10 +1,10 @@
 <component name="ProjectRunConfigurationManager">
-    <configuration default="false" name="start:app:shared" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-        <option name="ACTIVE_PROFILES" value="local,shared" />
-        <module name="swiyu-registry-identifier-data-service" />
-        <option name="SPRING_BOOT_MAIN_CLASS" value="ch.admin.bj.swiyu.registry.identifier.data.Application" />
-        <method v="2">
-            <option name="Make" enabled="true" />
-        </method>
-    </configuration>
+  <configuration default="false" name="start:app:shared" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <option name="ACTIVE_PROFILES" value="local,shared,ssl-secrets" />
+    <module name="swiyu-registry-identifier-data-service" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="ch.admin.bj.swiyu.registry.identifier.data.Application" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
 </component>

@@ -18,16 +18,19 @@ public class Application {
         var env = SpringApplication.run(Application.class, args).getEnvironment();
         var appName = env.getProperty("spring.application.name");
         var serverPort = env.getProperty("server.port", "8080");
+        var scheme = env.getProperty("server.ssl.key-store") != null ? "https" : "http";
+
         log.info(
             """
 
             ----------------------------------------------------------------------------
             \t'{}' is running!\s
             \tProfile(s): \t\t\t\t{}
-            \tSwaggerUI:   \t\t\t\thttp://localhost:{}/swagger-ui.html
+            \tSwaggerUI:   \t\t\t\t{}://localhost:{}/swagger-ui.html
             ----------------------------------------------------------------------------""",
             appName,
             env.getActiveProfiles(),
+            scheme,
             serverPort
         );
     }
