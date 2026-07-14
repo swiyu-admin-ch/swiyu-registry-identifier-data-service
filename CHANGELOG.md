@@ -5,6 +5,17 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.1
+
+### Changed
+
+- Update maven from 3.9.12 to 3.9.16
+- Update org.apache.maven.plugins:maven-surefire-plugin from 3.5.5 to 3.5.6
+- Update ch.qos.logback:logback-core from 1.5.36 to 1.5.37
+- Update ch.qos.logback:logback-classic from 1.5.36 to 1.5.37
+- Update com.diffplug.spotless:spotless-maven-plugin from 3.2.1 to 3.8.0
+- Update com.tngtech.archunit:archunit-junit5 from 1.4.1 to 1.4.2
+
 ## 1.3.0
 
 ### Added
