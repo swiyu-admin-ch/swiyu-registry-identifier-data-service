@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.3
+
+### Changed
+
+- Upgrade jeap-spring-boot-parent -> 37.5.0
+
+## 1.3.2
+
+### Changed
+
+- Migrate to Spring Boot 4 (jeap-spring-boot-parent 33.11.0 -> 36.1.1)
+- Bump logback override to 1.5.38 (parent's default 1.5.34 still exposed CVE-2026-13006)
+- Override tomcat-embed to 11.0.23 to resolve CVE-2026-55955 (parent's default 11.0.22 was still affected); remove now-obsolete Snyk ignore
+
 ## 1.3.1
 
 ### Changed
