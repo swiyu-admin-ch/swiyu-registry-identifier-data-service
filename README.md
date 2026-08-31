@@ -23,8 +23,8 @@ The Base registry contains the ability to create and update DIDs required in the
 
 ## Overview
 
-For a general overview of the swiyu Sandbox environment and its components, please check
-the [Sandbox context](https://swiyu-admin-ch.github.io/open-source-components/#sandbox).
+For a general overview of the public beta environment and its components, please check
+the [Public Beta context](https://swiyu-admin-ch.github.io/open-source-components/#public-beta).
 
 A datastore service always includes 2 sub services:
 
