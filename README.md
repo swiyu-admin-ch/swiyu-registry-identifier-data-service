@@ -18,6 +18,7 @@ The Base registry contains the ability to create and update DIDs required in the
 - [Overview](#Overview)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Docker hardened image](#Docker-hardened-image)
 - [Contributions and feedback](#contributions-and-feedback)
 - [License](#license)
 
@@ -71,6 +72,11 @@ variables.
 The data service is always unprotected as all data on the registers should be readable by everyone.  
 The swiyu-core-business-service do need protection, which is as of now handled by the infrastructure.  
 We do recommend to add mTLS authentication to your infrastructure endpoints.
+
+## Docker hardened image
+
+We use [Redhat Hardened Images](https://images.redhat.com/?name=openjdk).
+To test the docker image locally, we have a fake [secret .yml](docker-local-test-data/database-secret-credentials.yml) file and a [script](docker-local-test-data/docker-build-run.sh) to build and run it locally.
 
 ## Contributions and feedback
 

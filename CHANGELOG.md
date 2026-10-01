@@ -5,6 +5,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.10
+
+### Changed
+
+- fix snyk issues
+
+## 1.3.9
+
+### Changed
+
+- set docker parent image to 25.0 instead of latest
+
+## 1.3.8
+
+### Added
+
+- add GitHub action for SBOM generation
+
+## 1.3.7
+
+### Changed
+
+- Change Dockerfile to use an hardened image and reduce the affecting CVEs
+
 ## 1.3.6
 
 ### Changed
