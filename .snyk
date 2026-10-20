@@ -57,4 +57,9 @@ ignore:
         reason: No fix available in ubi9 JRE base image yet
         expires: 2026-11-09T09:00:00.000Z
         created: 2026-07-01T12:25:16.970Z
+  SNYK-JAVA-ORGGLASSFISHJAXB-20883142:
+    - '*':
+        reason: No fixed version available; 4.0.9 is the latest release. Pulled in transitively via hibernate-core > jaxb-runtime, which only unmarshals Hibernate's own mapping files, not attacker-controlled XML.
+        expires: 2026-11-09T09:00:00.000Z
+        created: 2026-10-19T09:00:00.000Z
 patch:
