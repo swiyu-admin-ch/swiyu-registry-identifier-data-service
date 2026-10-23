@@ -5,6 +5,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.14
+
+### Changed
+
+- Upgrade the jEAP Spring Boot parent from 41.3.0 to 41.23.0 and remove the jackson CVE overrides: the parent now manages the same fixed releases (jackson 2.22.3 / 3.2.3), so the overrides are no longer needed
+
 ## 1.3.13
 
 ### Fixed
