@@ -2,64 +2,9 @@
 version: v1.25.1
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  SNYK-RHEL9-LIBCURLMINIMAL-17878844:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-LIBCURLMINIMAL-17878854:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-LIBCURLMINIMAL-17878878:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-LIBCURLMINIMAL-17878902:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-LIBCURLMINIMAL-17878931:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-CURLMINIMAL-17878836:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-CURLMINIMAL-17878850:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-CURLMINIMAL-17878882:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-CURLMINIMAL-17878900:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-CURLMINIMAL-17878929:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-08-26T11:45:25.164Z
-  SNYK-RHEL9-LIBACL-17713920:
-    - '*':
-        reason: No fix available in ubi9 JRE base image yet
-        expires: 2026-11-09T09:00:00.000Z
-        created: 2026-07-01T12:25:16.970Z
   SNYK-JAVA-ORGGLASSFISHJAXB-20883142:
     - '*':
-        reason: No fixed version available; 4.0.9 is the latest release. Pulled in transitively via hibernate-core > jaxb-runtime, which only unmarshals Hibernate's own mapping files, not attacker-controlled XML.
-        expires: 2026-11-09T09:00:00.000Z
+        reason: "No published fix available yet: 4.0.9 is the latest jaxb-ri release and Snyk reports no upgrade or patch. jaxb-core arrives transitively via hibernate-core > jaxb-runtime and only unmarshals Hibernate's own ORM mapping files, never attacker-controlled XML. Re-check for an upstream release when the ignore expires."
+        expires: 2026-11-25T09:00:00.000Z
         created: 2026-10-19T09:00:00.000Z
 patch:
