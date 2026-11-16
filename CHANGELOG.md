@@ -5,6 +5,15 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.22
+
+### Changed
+
+- Upgrade the jEAP Spring Boot parent from 41.36.0 to 41.37.0
+- Re-scan the dependency tree and the container image with Snyk: no open high or critical findings. The
+  jaxb-core XXE finding SNYK-JAVA-ORGGLASSFISHJAXB-20883142 stays ignored until 2026-11-25: 4.0.9 is still
+  the latest jaxb-ri release
+
 ## 1.3.21
 
 ### Changed
