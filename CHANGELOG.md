@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- Update bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/ca-bundle from 20260727 to 20261005
 - Update maven from 3.9.16 to 3.10.2
 - Update postgres from 17.11 to 17.12
 - Update com.diffplug.spotless:spotless-maven-plugin from 3.10.2 to 3.12.0

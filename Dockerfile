@@ -1,7 +1,7 @@
 # SPDX-FileCopyrightText: 2025 Swiss Confederation
 #
 # SPDX-License-Identifier: MIT
-FROM bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/ca-bundle:20260727@sha256:fc578e096ae2671381e55f692ab487336352f0f696253a0dfc4b118a768fda93 AS certs
+FROM bit-base-images-docker-hosted.nexus.bit.admin.ch/bit/ca-bundle:20261005@sha256:c8fb7395b1c28e2afa31e61275adfe6f6ff61a0fff7d810dddf8bbe675e06905 AS certs
 FROM registry.access.redhat.com/hi/openjdk:25.0 AS builder
 
 USER root
