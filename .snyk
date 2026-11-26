@@ -5,6 +5,6 @@ ignore:
   SNYK-JAVA-ORGGLASSFISHJAXB-20883142:
     - '*':
         reason: "No published fix available yet: 4.0.9 is the latest jaxb-ri release and Snyk reports no upgrade or patch. jaxb-core arrives transitively via hibernate-core > jaxb-runtime and only unmarshals Hibernate's own ORM mapping files, never attacker-controlled XML. Re-check for an upstream release when the ignore expires."
-        expires: 2026-11-25T09:00:00.000Z
-        created: 2026-10-19T09:00:00.000Z
+        expires: 2026-12-09T09:00:00.000Z
+        created: 2026-11-25T09:00:00.000Z
 patch:

@@ -5,6 +5,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## 1.3.24
+
+### Changed
+
+- Upgrade ch.admin.bit.jeap:jeap-spring-boot-parent from 41.41.0 to 41.42.0
+- Override Spring Boot to 4.1.3, Spring Framework to 7.0.11 and Spring Security to 7.1.3 to fix seven Snyk
+  findings (three critical, four high) in spring-boot-actuator, spring-boot-security, spring-beans,
+  spring-core, spring-web, spring-security-core and spring-security-web; the jEAP parent 41.42.0 still
+  manages Spring Boot 4.1.2 and pins the Spring versions literally
+- Override postgresql to 42.7.15 to fix seven Snyk findings (four critical, three high) in
+  org.postgresql:postgresql 42.7.14 (SQL injection, failing open, uncontrolled search path element)
+- Re-scan the dependency tree and the container image with Snyk: no open high or critical findings. The
+  unfixed jaxb-core XXE finding SNYK-JAVA-ORGGLASSFISHJAXB-20883142 stays ignored until 2026-12-09
+
 ## 1.3.23
 
 ### Changed
